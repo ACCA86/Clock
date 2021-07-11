@@ -1,0 +1,113 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:rgba(0, 0, 0, .5);display:flex;flex-direction:column;justify-content:center;text-align:center;align-items:center;}
+.clock{width:360px;height:360px;margin:40px auto;border:4px solid dodgerblue;border-radius:50%;
+display:flex;justify-content:center;text-align:center;align-items:center;position:relative;}
+.clock::before{
+	content:'';
+	position:absolute;
+	width:12px;
+	height:12px;
+	background:#dc0f35;
+	border-radius:50%;
+}
+.hour,.minute,.second{position:absolute;}
+
+.hour,.hr{width:200px;height:200px;}
+.minute,.mn{width:230px;height:230px;}
+.second,.sc{width:250px;height:250px;}
+
+.hr,.mn,.sc{position:absolute;display:flex;justify-content:center;}
+
+.hr::before{
+	content:'';
+	position:absolute;
+	width:8px;
+	height:100px;
+	background:dodgerblue;
+}
+.mn::before{
+	content:'';
+	position:absolute;
+	width:4px;
+	height:110px;
+	background:dodgerblue;
+}
+.sc::before{
+	content:'';
+	position:absolute;
+	width:2px;
+	height:120px;
+	background:#dc0f35;
+}
+
+.num{padding:15px;position:absolute;top:0px;left:0;width:100%;height:100%;
+	text-align:center;font-size:2rem;color:#fff;}
+
+.num::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+	height:15px;
+	width:5px;
+	background:white;
+	background:#77b4ef;
+}
+
+.num1{transform:rotate(30deg);}
+.num1 div{transform:rotate(-30deg);}
+.num2{transform:rotate(60deg);}
+.num2 div{transform:rotate(-60deg);}
+
+.num3{transform:rotate(90deg);}
+.num3 div{transform:rotate(-90deg);}
+
+.num4{transform:rotate(120deg);}
+.num4 div{transform:rotate(-120deg);}
+
+.num5{transform:rotate(150deg);}
+.num5 div{transform:rotate(-150deg);}
+
+.num6{transform:rotate(180deg);}
+.num6 div{transform:rotate(-180deg);}
+
+.num7{transform:rotate(210deg);}
+.num7 div{transform:rotate(-210deg);}
+
+.num8{transform:rotate(240deg);}
+.num8 div{transform:rotate(-240deg);}
+
+.num9{transform:rotate(270deg);}
+.num9 div{transform:rotate(-270deg);}
+
+.num10{transform:rotate(300deg);}
+.num10 div{transform:rotate(-300deg);}
+
+.num11{transform:rotate(330deg);}
+.num11 div{transform:rotate(-330deg);}
+
+.num12{transform:rotate(360deg);}
+.num12 div{transform:rotate(-360deg);}
+/*
+.num13{transform:rotate(20deg);}
+.num14{transform:rotate(50deg);}
+.num15{transform:rotate(80deg);}
+.num16{transform:rotate(110deg);}
+.num17{transform:rotate(140deg);}
+.num18{transform:rotate(170deg);}
+.num19{transform:rotate(200deg);}
+.num20{transform:rotate(230deg);}
+.num21{transform:rotate(260deg);}
+.num22{transform:rotate(290deg);}
+.num23{transform:rotate(320deg);}
+.num24{transform:rotate(350deg);}*/
+
+.con_digital{display:flex;font-size:60px;color:dodgerblue;
+	max-width:350px;height:80px;text-align:center;}
+
+
+
+
+
+
